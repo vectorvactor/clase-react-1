@@ -6,10 +6,9 @@ export function App() {
   return (
     <div>
       <h1>Hola (desde componente)</h1>
-      <ComponenteEj icono=":)" />
-      <ComponenteEj icono=":(" />
-      <ComponenteEj icono=":*" />
-      <ComponenteEj icono=";)" />
+      <ComponenteEj titulo="Componente 1" icono=":(" />
+      <ComponenteEj titulo="Componente 2" icono=":*" />
+      <ComponenteEj titulo="Componente 3" icono=";)" />
     </div>
   );
 }
