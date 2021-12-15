@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './componente-lista.css';
+
 export default function ComponenteLista(props) {
   let claseLista = '';
   if (props.done) {
