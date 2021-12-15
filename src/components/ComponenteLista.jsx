@@ -1,5 +1,17 @@
 import React from 'react';
 
 export default function ComponenteLista(props) {
-  return <li>{props.texto}</li>;
+  let claseLista = '';
+  if (props.done) {
+    claseLista = 'el-checked';
+  } else {
+    claseLista = 'el-unchecked';
+  }
+
+  return (
+    <li className={claseLista}>
+      <input type="checkbox" />
+      {props.texto}
+    </li>
+  );
 }
