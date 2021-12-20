@@ -16,10 +16,14 @@ export function Lista(props) {
 
   const [listaComponentes, setListaComponentes] = useState(listaInicial);
   const valorTextInput = useRef('');
+  const valorPrioritySelect = useRef('');
 
   const funcion = function addElement() {
     const newLista = listaComponentes.concat(
-      <ComponenteListaClase texto={valorTextInput.current.value} />
+      <ComponenteListaClase
+        texto={valorTextInput.current.value}
+        prioridad={valorPrioritySelect.current.value}
+      />
     );
     setListaComponentes(newLista);
   };
@@ -36,6 +40,11 @@ export function Lista(props) {
             placeholder="Introduce una tarea"
           />
           <br />
+          <select ref={valorPrioritySelect}>
+            <option value="alta">Prioridad Alta</option>
+            <option value="media">Prioridad Media</option>
+            <option value="baja">Prioridad Baja</option>
+          </select>
           <button onClick={funcion}>Añadir</button>
         </li>
       </ul>

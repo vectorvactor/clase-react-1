@@ -4,15 +4,15 @@ import { Lista } from './components/Lista';
 
 export function App() {
   const elementos1 = [
-    { done: false, texto: 'Elemento (Comp 1)', prioridad: 'alta' },
-    { done: true, texto: 'Elemento (Comp 2)', prioridad: 'media' },
+    { done: false, texto: 'Hacer la compra', prioridad: 'alta' },
+    { done: true, texto: 'Sacar al perro', prioridad: 'media' },
   ];
   const elementos2 = [
-    { done: false, texto: 'Elemento (Comp 3)' },
-    { done: true, texto: 'Elemento (Comp 4)' },
-    { done: false, texto: 'Elemento (Comp 5)' },
+    { done: false, texto: 'Tomates' },
+    { done: true, texto: 'Queso' },
+    { done: false, texto: 'Leche' },
   ];
-  const elementos3 = [{ done: false, texto: 'Elemento (Comp 6)' }];
+  const elementos3 = [{ done: false, texto: 'Estudiar React.js' }];
 
   return (
     <div>
