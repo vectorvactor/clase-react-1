@@ -18,7 +18,10 @@ export function Lista(props) {
   return (
     <div>
       {props.titulo} - {props.icono}
-      <ul>{listaComponentes}</ul>
+      <ul>
+        {listaComponentes}
+        
+      </ul>
     </div>
   );
 }
