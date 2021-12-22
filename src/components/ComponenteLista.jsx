@@ -1,27 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './componente-lista.css';
 
 export default function ComponenteLista(props) {
   let claseLista = '';
+
+  const [done, setDone] = useState(props.done);
+
   setElementClass();
   function setElementClass() {
-    props.prioridad;
-    if (props.done) {
+    claseLista = props.prioridad;
+    if (done) {
       claseLista += ' el-done';
     } else {
       claseLista += ' el-undone';
     }
   }
 
-  function setTaskStatus() {
-    props.done = !props.done;
-    setElementClass();
+  function changeStatus() {
+    setDone(!done);
   }
 
   return (
     <li className={claseLista}>
-      <input type="checkbox" onChange={setTaskStatus} />
+      <input type="checkbox" defaultChecked={done} onChange={changeStatus} />
       {props.texto}
     </li>
   );
@@ -29,4 +31,5 @@ export default function ComponenteLista(props) {
 
 ComponenteLista.defaultProps = {
   prioridad: 'baja',
+  done: false,
 };

@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react';
-import ComponenteListaClase from './ComponenteListaClase';
-export function Lista(props) {
+import ComponenteLista from './ComponenteLista';
+export default function Lista(props) {
   const listaInicial = [];
   if (props.elementos !== undefined) {
     for (let i = 0; i < props.elementos.length; i++) {
       listaInicial.push(
-        <ComponenteListaClase
+        <ComponenteLista
           done={props.elementos[i].done}
           texto={props.elementos[i].texto}
           prioridad={props.elementos[i].prioridad}
@@ -20,7 +20,7 @@ export function Lista(props) {
 
   const funcion = function addElement() {
     const newLista = listaComponentes.concat(
-      <ComponenteListaClase
+      <ComponenteLista
         texto={valorTextInput.current.value}
         prioridad={valorPrioritySelect.current.value}
       />
