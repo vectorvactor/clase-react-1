@@ -1,0 +1,157 @@
+.header-navbar {
+  background: linear-gradient(90deg, #ffffff 0%, rgb(165, 158, 158));
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.navbar-logo {
+  color: #ffffff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.logo-image {
+  width: 137px;
+  vertical-align: middle;
+}
+
+.fa-user-graduate {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+.navbar-menu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 80vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  background-color: #eb8282;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.navbar-link-profile {
+  color: #ffffff;
+  background-color: #181223;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.navbar-link-profile:hover {
+  background-color: #ffffff;
+  color: rgb(219, 16, 16);
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+  color: #ffffff;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .header-navbar {
+    position: relative;
+  }
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 532px;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-menu.active {
+    background: rgb(219, 16, 16);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .navbar-link {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar-link:hover {
+    background-color: #eb8282;
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: -6px;
+    left: -30px;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+
+  .navbar-link-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #181223;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .navbar-link-mobile:hover {
+    background: #ffffff;
+    color: #d14f4f;
+    font-weight: bold;
+    transition: 250ms;
+  }
+
+  .desktop-menu-button {
+    display: none;
+  }
+}
