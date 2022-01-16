@@ -13,7 +13,12 @@ export function App() {
       <Header />
       {MenuItems.map((item) => {
         return (
-          <Route key={item.id} path={item.path} exact component={item.component} />
+          <Route
+            key={item.id}
+            path={item.path}
+            exact
+            component={item.component}
+          />
         );
       })}
     </Router>

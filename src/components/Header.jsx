@@ -34,8 +34,10 @@ class Header extends React.Component {
         >
           {MenuItems.map((item) => {
             return (
-              <li key={item.id} className="navbar-link">
-                <Link to={item.path}>{item.title}</Link>
+              <li key={item.id}>
+                <Link to={item.path} className="navbar-link">
+                  {item.title}
+                </Link>
               </li>
             );
           })}

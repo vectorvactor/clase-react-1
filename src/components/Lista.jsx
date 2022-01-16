@@ -1,11 +1,14 @@
 import React, { useState, useRef } from 'react';
 import ComponenteLista from './ComponenteLista';
+import uuid from 'react-uuid';
+
 export default function Lista(props) {
   const listaInicial = [];
   if (props.elementos !== undefined) {
     for (let i = 0; i < props.elementos.length; i++) {
       listaInicial.push(
         <ComponenteLista
+          key={uuid()}
           done={props.elementos[i].done}
           texto={props.elementos[i].texto}
           prioridad={props.elementos[i].prioridad}
@@ -21,6 +24,7 @@ export default function Lista(props) {
   const funcion = function addElement() {
     const newLista = listaComponentes.concat(
       <ComponenteLista
+        key={uuid()}
         texto={valorTextInput.current.value}
         prioridad={valorPrioritySelect.current.value}
       />

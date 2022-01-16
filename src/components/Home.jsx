@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Home() {
   return (
-    <div>
+    <div className="main-site">
       <h1>Bienvenido!</h1>
     </div>
   );
