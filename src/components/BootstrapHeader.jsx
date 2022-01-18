@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { MenuItems } from '../data/MenuItems';
+import './header.css';
 
 class BootstrapHeader extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class BootstrapHeader extends React.Component {
 
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="light">
         <Container>
           <Navbar.Brand href="#home">
             <img
