@@ -13,7 +13,7 @@ export const DatosTablaCoches = [
     color: 'rojo',
     imagen:
       'https://img.remediosdigitales.com/489069/peugeot-partner-outdoor-1/1366_2000.jpg',
-    descripción: 'Una furgoneta chachi para ti, perroflauta',
+    descripcion: 'Una furgoneta chachi para ti, perroflauta',
   },
   {
     matricula: '1111 YES',
@@ -22,7 +22,7 @@ export const DatosTablaCoches = [
     color: 'verde',
     imagen:
       'https://www.manualesdetodo.net/wp-content/uploads/2020/11/2012-ix35-hyundai-u-1200x720.jpg',
-    descripción: 'Un esiuvi, parece un 4x4 pero no lo es',
+    descripcion: 'Un esiuvi, parece un 4x4 pero no lo es',
   },
   {
     matricula: '2222 WOW',
@@ -31,7 +31,7 @@ export const DatosTablaCoches = [
     color: 'blanco',
     imagen:
       'https://www.mercadoracing.org/imagenes-anuncios/26/419711/mitsubishi-evo-vii-rs.jpg',
-    descripción: 'Un coche genial para tus carreras ilegales',
+    descripcion: 'Un coche genial para tus carreras ilegales',
   },
   {
     matricula: '3333 FFF',
@@ -40,6 +40,6 @@ export const DatosTablaCoches = [
     color: 'azul',
     imagen:
       'https://periodismodelmotor.com/wp-content/uploads/2019/06/Subaru-Impreza-22B-STI.jpg',
-    descripción: 'Este esta muy bien también para reisin',
+    descripcion: 'Este esta muy bien también para reisin',
   },
 ];
