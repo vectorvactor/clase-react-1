@@ -2,7 +2,7 @@ import React from 'react';
 import uuid from 'react-uuid';
 import { Card, Container, Table, Row, Col } from 'react-bootstrap';
 import { TitulosTablaCoches, DatosTablaCoches } from '../data/DatosCoches';
-import './coches.css';
+import './table.css';
 
 class Coches extends React.Component {
   constructor(props) {
